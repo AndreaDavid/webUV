@@ -1,0 +1,26 @@
+﻿# Carpetas de compilación a ignorar
+build/
+ext/
+sass/
+app/
+resources/sass/.sass-cache/
+
+# Archivos o ejecutables a ignorar
+.architect
+.sencha/
+bootstrap.css
+bootstrap.js
+bootstrap.json
+bootstrap.jsonp
+classic.json
+classic.jsonp
+modern.json
+modern.jsonp
+app.json
+app.js
+app.json.meta
+build.xml
+build.settings
+index.html
+
+workspace.json

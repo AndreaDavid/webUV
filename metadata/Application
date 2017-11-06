@@ -1,0 +1,43 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "track"
+        ],
+        "name": "MyApp",
+        "requires": [
+            "Ext.window.Toast"
+        ],
+        "stores": [
+            "store_track"
+        ],
+        "views": [
+            "main",
+            "vtn_register",
+            "hola"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": null
+            },
+            "name": "launch",
+            "designerId": "b3089ff0-99f8-4bfe-9502-9d7f9b031b56"
+        }
+    ]
+}

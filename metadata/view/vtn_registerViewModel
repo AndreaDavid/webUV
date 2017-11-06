@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "vtn_register",
+        "designer|userClassName": "vtn_registerViewModel"
+    },
+    "designerId": "0934172c-ca32-44d8-828f-40df1c22981f"
+}

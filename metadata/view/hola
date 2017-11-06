@@ -1,0 +1,39 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "container|pack": "center",
+        "designer|userAlias": "hola",
+        "designer|userClassName": "hola",
+        "height": 250,
+        "layout": "vbox",
+        "modal": true,
+        "title": "hola",
+        "width": 400
+    },
+    "designerId": "ee79d7ba-4314-4acd-a7bc-b09ef5ef2ed7",
+    "viewControllerInstanceId": "b1b31c99-077d-4726-ba92-6fecde456e12",
+    "viewModelInstanceId": "aeedf1b6-c580-46e3-8125-c91d6fb44340",
+    "cn": [
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": null,
+                "layout|flex": 1,
+                "text": "Hola Mundo"
+            },
+            "name": "MyLabel1",
+            "designerId": "bbb323ee-f728-4e71-b9e3-ded5e580ef3f"
+        }
+    ]
+}

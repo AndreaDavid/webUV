@@ -1,0 +1,22 @@
+
+
+.x-btn-inner-default-small{
+    border-bottom-color: green !important;
+    border-color: red !important;
+    border: width 10px border-style color green !important;
+    border-bottom-style: red !important;
+    
+
+}
+
+.buttonmain{
+    text-align: center !important;
+    font-size:13px !important;
+    color: rgb(29, 27, 25) !important;
+    font-weight: bold;
+    background-image: none;
+    background-position: center !important;
+    background-origin:content-box !important;
+    style:'background-color:red' !important;
+    background-color: rgba(0, 128, 0, 0.473) !important;
+}

@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "baseCls": null,
         "container|align": "stretch",
         "designer|initialView": true,
         "designer|userAlias": "main",
@@ -19,147 +20,70 @@
     "viewModelInstanceId": "a82ce43a-1fce-49a0-b19b-7acc14c5fbf1",
     "cn": [
         {
-            "type": "Ext.panel.Panel",
+            "type": "Ext.container.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "container|align": "stretch",
-                "header": false,
-                "id": "pnl_main",
-                "layout": "vbox",
-                "layout|flex": 1,
-                "title": "My Panel"
+                "layout|flex": 1
             },
-            "name": "MyPanel",
+            "name": "MyContainer2",
+            "designerId": "6086ba90-9a8a-40c8-aff6-468970c8373a"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "baseCls": null,
+                "container|align": "stretch",
+                "id": "pnl_main",
+                "layout": "hbox",
+                "layout|flex": 4,
+                "width": 915
+            },
+            "name": "MyContainer1",
             "designerId": "b2db2979-8d90-47d0-9b8b-317439c8c4e1",
             "cn": [
                 {
-                    "type": "Ext.form.Panel",
+                    "type": "Ext.container.Container",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "bodyPadding": 10,
-                        "container|align": "center",
-                        "container|pack": "center",
-                        "layout": "vbox",
-                        "layout|flex": 1,
-                        "title": "My Form"
+                        "layout|flex": 1
                     },
-                    "name": "MyForm",
-                    "designerId": "1d1961a5-bfd7-426d-9abd-57b01f02dc38",
+                    "name": "MyContainer4",
+                    "designerId": "db621b2a-5bff-4d1b-850b-12e161a71ad2"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "login_panel"
+                        ],
+                        "container|align": "stretch",
+                        "dock": null,
+                        "layout": "hbox",
+                        "layout|flex": 4,
+                        "margin": null,
+                        "title": "LOGIN"
+                    },
+                    "name": "MyPanel1",
+                    "designerId": "7c77aeab-fbeb-4644-ab48-ed474896b4c8",
                     "cn": [
-                        {
-                            "type": "Ext.form.Label",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "height": "",
-                                "layout|flex": 1,
-                                "maxHeight": null,
-                                "minHeight": null,
-                                "text": "UVradiation"
-                            },
-                            "name": "MyLabel",
-                            "designerId": "6060ae6c-1190-4ad8-a0e7-6f0ddf7431ff"
-                        },
-                        {
-                            "type": "Ext.form.field.Text",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "allowBlank": false,
-                                "fieldLabel": "Email",
-                                "height": "",
-                                "inputType": "email",
-                                "layout|flex": 1,
-                                "name": "correo",
-                                "width": ""
-                            },
-                            "name": "MyTextField1",
-                            "designerId": "7c2569bd-d56f-4080-bc26-48bd5c508ffe",
-                            "cn": [
-                                {
-                                    "type": "fixedfunction",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|params": [
-                                            "value"
-                                        ],
-                                        "fn": "validator",
-                                        "implHandler": [
-                                            "var index = value.indexOf(\"@\");",
-                                            "if(index>0){",
-                                            "    return true;",
-                                            "}else{",
-                                            "    return \"usuario no valido\";",
-                                            "}"
-                                        ]
-                                    },
-                                    "name": "validator",
-                                    "designerId": "27bd8a3c-5828-4e45-8fcb-ae849a89fc1f"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "Ext.form.field.Text",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "allowBlank": false,
-                                "fieldLabel": "Contraseña",
-                                "height": 10,
-                                "inputType": "password",
-                                "layout|flex": 1,
-                                "name": "password"
-                            },
-                            "name": "MyTextField",
-                            "designerId": "ce36e690-602e-4c4b-aeaa-9794d3b29410",
-                            "cn": [
-                                {
-                                    "type": "fixedfunction",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|params": [
-                                            "value"
-                                        ],
-                                        "fn": "validator",
-                                        "implHandler": [
-                                            "var index = value.length;",
-                                            "if(index>3){",
-                                            "    return true;",
-                                            "}else{",
-                                            "    return \"contraseña debe tener minimo 4 caracteres\";",
-                                            "}"
-                                        ]
-                                    },
-                                    "name": "validator",
-                                    "designerId": "fba6d2a0-78d9-4b71-b1cb-09e91c735f15"
-                                }
-                            ]
-                        },
                         {
                             "type": "Ext.container.Container",
                             "reference": {
@@ -168,144 +92,355 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "baseCls": "pnl_main",
+                                "border": null,
                                 "cls": [
-                                    "ctn_button"
+                                    "pnl_main"
                                 ],
-                                "container|align": "middle",
-                                "container|pack": "center",
-                                "layout": "hbox",
-                                "layout|flex": 1
+                                "layout|flex": 2,
+                                "margin": ""
                             },
-                            "name": "MyContainer",
-                            "designerId": "0882cb3e-dfc8-4015-8eac-e856dbe35df4",
+                            "name": "MyContainer6",
+                            "designerId": "586c6986-959c-421d-b199-e08028188bb3"
+                        },
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": null,
+                                "bodyPadding": 10,
+                                "container|align": "stretch",
+                                "container|pack": "end",
+                                "dock": null,
+                                "header": false,
+                                "layout": "vbox",
+                                "layout|flex": 2,
+                                "maxWidth": 400,
+                                "title": "My Form"
+                            },
+                            "name": "MyForm",
+                            "designerId": "1d1961a5-bfd7-426d-9abd-57b01f02dc38",
                             "cn": [
                                 {
-                                    "type": "Ext.button.Button",
+                                    "type": "Ext.container.Container",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "cls": null,
-                                        "iconAlign": null,
-                                        "id": "ingresar",
-                                        "text": "Entrar"
+                                        "container|align": "middle",
+                                        "container|pack": "center",
+                                        "dock": null,
+                                        "layout": "hbox",
+                                        "layout|flex": 2
                                     },
-                                    "name": "MyButton1",
-                                    "designerId": "2e0e478d-fa96-47a0-a434-093da9722115",
+                                    "name": "MyContainer8",
+                                    "designerId": "c5c98e60-2316-4343-bb6c-efe1ecbfd33e",
                                     "cn": [
                                         {
-                                            "type": "basiceventbinding",
+                                            "type": "Ext.container.Container",
                                             "reference": {
-                                                "name": "listeners",
+                                                "name": "items",
                                                 "type": "array"
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "fn": "onIngresarClick",
-                                                "implHandler": [
-                                                    "var form=button.up(\"form\").getForm();",
-                                                    "if(form.isValid()){",
-                                                    "    form.submit(",
-                                                    "        {",
-                                                    "            url:\"accesscontroller/login\",",
-                                                    "            method:\"POST\",",
-                                                    "            waitMsg:\"Ingresando\",",
-                                                    "            success:function(frm,out){",
-                                                    "                var vtn=Ext.widget(\"hola\");",
-                                                    "                Ext.getCmp(\"pnl_main\").removeAll();",
-                                                    "                Ext.getCmp(\"pnl_main\").add(vtn);",
-                                                    "",
-                                                    "            },",
-                                                    "            failure:function(frm,out){",
-                                                    "",
-                                                    "                if(out.result!==undefined &&out.result.message===\"usuarioNoRegistrado\"){",
-                                                    "                    if(Ext.getCmp(\"toast\")===undefined){",
-                                                    "                        Ext.toast({",
-                                                    "                            timeout: 2000,",
-                                                    "                            id:\"toast\",",
-                                                    "                            html: '<center>login incorrecto</center>',",
-                                                    "                            title: 'Alerta',",
-                                                    "                            width: 300,",
-                                                    "                            align: 't'",
-                                                    "                        });",
-                                                    "                    }",
-                                                    "                }else{",
-                                                    "                    if(Ext.getCmp(\"toast\")===undefined){",
-                                                    "                        Ext.toast({",
-                                                    "                            timeout: 2000,",
-                                                    "                            id:\"toast\",",
-                                                    "                            html: '<center>Error servidor</center>',",
-                                                    "                            title: 'Alerta',",
-                                                    "                            width: 300,",
-                                                    "                            align: 't'",
-                                                    "                        });",
-                                                    "                    }",
-                                                    "                }",
-                                                    "",
-                                                    "            }",
-                                                    "        }",
-                                                    "    );",
-                                                    "}else{",
-                                                    "",
-                                                    "}",
-                                                    "",
-                                                    ""
-                                                ],
-                                                "name": "click",
-                                                "scope": "me"
+                                                "layout|flex": 1
                                             },
-                                            "name": "onIngresarClick",
-                                            "designerId": "ea5fccd0-48d9-464b-9f52-6a5814262a3a"
+                                            "name": "MyContainer9",
+                                            "designerId": "ea32ffcf-687d-4c2b-83b4-a50cac00cfda"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": [
+                                                    "tittle"
+                                                ],
+                                                "layout|flex": 3,
+                                                "maxHeight": null,
+                                                "minHeight": null,
+                                                "text": "UV.radiation"
+                                            },
+                                            "name": "MyLabel",
+                                            "designerId": "6060ae6c-1190-4ad8-a0e7-6f0ddf7431ff"
                                         }
                                     ]
                                 },
                                 {
-                                    "type": "Ext.button.Button",
+                                    "type": "Ext.container.Container",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "arrowCls": null,
-                                        "baseCls": null,
-                                        "cls": "butttonmain",
-                                        "componentCls": "",
-                                        "focusCls": "",
-                                        "iconCls": null,
-                                        "id": "registrar",
-                                        "text": "Registrarme"
+                                        "container|align": "stretch",
+                                        "layout": "vbox",
+                                        "layout|flex": 2
                                     },
-                                    "name": "MyButton",
-                                    "designerId": "81fa4e28-e61a-4cf1-943f-317983aaf93e",
+                                    "name": "MyContainer7",
+                                    "designerId": "8bbd430c-0228-42ab-bd1b-7f64a36fb049",
                                     "cn": [
                                         {
-                                            "type": "basiceventbinding",
+                                            "type": "Ext.form.field.Text",
                                             "reference": {
-                                                "name": "listeners",
+                                                "name": "items",
                                                 "type": "array"
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "fn": "onRegistrarClick",
-                                                "implHandler": [
-                                                    "var vtn=Ext.widget(\"vtn_register\");",
-                                                    "vtn.show();",
-                                                    "vtn.center();"
-                                                ],
-                                                "name": "click",
-                                                "scope": "me"
+                                                "allowBlank": false,
+                                                "fieldLabel": "Email",
+                                                "inputType": "email",
+                                                "name": "correo",
+                                                "width": 150
                                             },
-                                            "name": "onRegistrarClick",
-                                            "designerId": "00554139-8b50-4e10-a9a7-ba00b73b97c9"
+                                            "name": "MyTextField1",
+                                            "designerId": "7c2569bd-d56f-4080-bc26-48bd5c508ffe",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "value"
+                                                        ],
+                                                        "fn": "validator",
+                                                        "implHandler": [
+                                                            "var index = value.indexOf(\"@\");",
+                                                            "if(index>0){",
+                                                            "    return true;",
+                                                            "}else{",
+                                                            "    return \"usuario no valido\";",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "name": "validator",
+                                                    "designerId": "27bd8a3c-5828-4e45-8fcb-ae849a89fc1f"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "allowBlank": false,
+                                                "fieldLabel": "Contraseña",
+                                                "inputType": "password",
+                                                "name": "password",
+                                                "width": 150
+                                            },
+                                            "name": "MyTextField",
+                                            "designerId": "ce36e690-602e-4c4b-aeaa-9794d3b29410",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "value"
+                                                        ],
+                                                        "fn": "validator",
+                                                        "implHandler": [
+                                                            "var index = value.length;",
+                                                            "if(index>3){",
+                                                            "    return true;",
+                                                            "}else{",
+                                                            "    return \"contraseña debe tener minimo 4 caracteres\";",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "name": "validator",
+                                                    "designerId": "fba6d2a0-78d9-4b71-b1cb-09e91c735f15"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "ctn_button"
+                                        ],
+                                        "container|pack": "center",
+                                        "dock": null,
+                                        "height": 150,
+                                        "layout": "hbox",
+                                        "layout|flex": 1
+                                    },
+                                    "name": "MyContainer",
+                                    "designerId": "0882cb3e-dfc8-4015-8eac-e856dbe35df4",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": null,
+                                                "iconAlign": null,
+                                                "id": "ingresar",
+                                                "text": "Entrar"
+                                            },
+                                            "name": "MyButton1",
+                                            "designerId": "2e0e478d-fa96-47a0-a434-093da9722115",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onIngresarClick",
+                                                        "implHandler": [
+                                                            "var form=button.up(\"form\").getForm();",
+                                                            "if(form.isValid()){",
+                                                            "    form.submit(",
+                                                            "        {",
+                                                            "            url:\"accesscontroller/login\",",
+                                                            "            method:\"POST\",",
+                                                            "            waitMsg:\"Ingresando\",",
+                                                            "            success:function(frm,out){",
+                                                            "                var vtn=Ext.widget(\"hola\");",
+                                                            "                Ext.getCmp(\"pnl_main\").removeAll();",
+                                                            "                Ext.getCmp(\"pnl_main\").add(vtn);",
+                                                            "",
+                                                            "            },",
+                                                            "            failure:function(frm,out){",
+                                                            "",
+                                                            "                if(out.result!==undefined &&out.result.message===\"usuarioNoRegistrado\"){",
+                                                            "                    if(Ext.getCmp(\"toast\")===undefined){",
+                                                            "                        Ext.toast({",
+                                                            "                            timeout: 2000,",
+                                                            "                            id:\"toast\",",
+                                                            "                            html: '<center>login incorrecto</center>',",
+                                                            "                            title: 'Alerta',",
+                                                            "                            width: 300,",
+                                                            "                            align: 't'",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                }else{",
+                                                            "                    if(Ext.getCmp(\"toast\")===undefined){",
+                                                            "                        Ext.toast({",
+                                                            "                            timeout: 2000,",
+                                                            "                            id:\"toast\",",
+                                                            "                            html: '<center>Error servidor</center>',",
+                                                            "                            title: 'Alerta',",
+                                                            "                            width: 300,",
+                                                            "                            align: 't'",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                }",
+                                                            "",
+                                                            "            }",
+                                                            "        }",
+                                                            "    );",
+                                                            "}else{",
+                                                            "",
+                                                            "}",
+                                                            "",
+                                                            ""
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onIngresarClick",
+                                                    "designerId": "ea5fccd0-48d9-464b-9f52-6a5814262a3a"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "arrowCls": null,
+                                                "baseCls": null,
+                                                "cls": "butttonmain",
+                                                "componentCls": "",
+                                                "focusCls": "",
+                                                "iconCls": null,
+                                                "id": "registrar",
+                                                "text": "Registrarme"
+                                            },
+                                            "name": "MyButton",
+                                            "designerId": "81fa4e28-e61a-4cf1-943f-317983aaf93e",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onRegistrarClick",
+                                                        "implHandler": [
+                                                            "var vtn=Ext.widget(\"vtn_register\");",
+                                                            "vtn.show();",
+                                                            "vtn.center();"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onRegistrarClick",
+                                                    "designerId": "00554139-8b50-4e10-a9a7-ba00b73b97c9"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "ccd05980-d6b3-4875-8228-c0606df091eb"
                 }
             ]
         },
@@ -323,6 +458,19 @@
             },
             "name": "onMainRender",
             "designerId": "8acdf323-2c17-4aec-af9d-718ebf415b80"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1
+            },
+            "name": "MyContainer3",
+            "designerId": "6c2888d2-4224-429e-9b14-53d80cd79603"
         }
     ]
 }

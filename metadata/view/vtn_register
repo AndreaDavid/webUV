@@ -232,6 +232,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "cls": "btn_container",
                         "id": "registrarme",
                         "text": "Registrarme"
                     },

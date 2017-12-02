@@ -2,67 +2,55 @@
 
 /******MAIN******/
 /*Img_fondo*/
-.pnl_main{
-    background: url('../image/2.png') no-repeat !important;
-    background-position: center;
-    background-size:100% 100%!important;
-    -moz-background-size: 100% 100%!important;
-    -webkit-background-size: 100% 100% !important;
-    -o-background-size:100% 100% !important;
-    animation: rotation 21s;
-
-    
-    
-
-    
+.main{
+    background: url('../image/day_sun.jpg') no-repeat;
+    background-size: 100% 100% !important;
     
 }
-.login_panel{
-    border-radius: 4px;
-    background-color:#eea468;
-    margin:12px 5px 5px 5px;
-    padding: 10px;
-    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3); 
+.container6{
+    background: url('../image/gifsun.gif') no-repeat !important;
+    background-position: center;
+    background-size: 100% 100%!important;
+    -moz-background-size: 100% 100%!important;
+    -webkit-background-size: 100% 100%!important;
+    -o-background-size: 100% 100%!important;
+    /*animation: rotation 21s;  */
+    
+}
+.x-panel-header-title-default {
+    color: #464b57;
+    font-size: 20px;
+    font-family:'Lucida Sans Unicode';
+    line-height: 20px;
+    margin: 5px 5px 5px 5px;
+}
+.login_container5{
+background-color: #18294e;
+color: #18294e;
 }
 
 .my_form{
     /*margin: 50x 80px 70px 100px !important;*/
-    display: block;
-    
-    
+    display: block;  
 
 }
 .tittle{
     /*padding:30px 30px 5px;*/
     font-size: 48px;
-    color:#eea468;
+    color:#a25336;
     background: none; 
-    border-color: #990c0c;
     -moz-text-size-adjust: 100%;
     text-transform:uppercase;/*mayuscula*/
     transition:all 3s ease-in;/*movimiento*/
-    /*transform: rotateZ(7deg);angulo de totacion*/
     line-height: 41.8px;
     cursor: default;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
-    font-stretch: bold;
+    font-stretch: expanded;
     
 }
 
 /*btn_register_entrar*/
-.buttonmain{
-    text-align: center !important;
-    font-size:13px !important;
-    color: rgb(29, 27, 25) !important;
-    font-weight: bold;
-    background-image: none;
-    background-position: center !important;
-    background-origin:content-box !important;
-    style:'background-color:red' !important;
-    background-color: rgba(0, 128, 0, 0.473) !important;
-}
+
 /*.pnl_login{
     position: relative;
     background: #e1e45bc0 !important;
@@ -74,22 +62,33 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     margin: 0 auto;  
 }*/
-
+.button{
+    font-size:13px !important;
+    font-family: "Roboto", helvetica, arial, sans-serif !important;
+    background-position: center !important;
+    background-color:rgba(60,72,72,0.4);
+    border-color: rgb(97, 212, 225);
+}
 
 /******VTN_REGISTER******/
-.title_header {
-    margin: 0 0 20px;
-    color: #33b5e5;
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    line-height: 1;
+
+  .vtn_register_boby{
+      background-color: rgb(183, 209, 223);
+      border-color: #c4640b;
+      border-width: 15px;
   }
+  .img_fondo{
+    background: url('../image/sunFondo.png') no-repeat;
+    
+    
+  }
+
+
+
+
 @keyframes rotation{
 0%{transform: rotate(60deg) }
 100%{transform: rotate(360deg)}
-
-
 }
 
     

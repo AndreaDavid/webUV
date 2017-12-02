@@ -7,14 +7,20 @@
     "codeClass": null,
     "userConfig": {
         "baseCls": null,
+        "cls": [
+            "main"
+        ],
         "container|align": "stretch",
-        "designer|initialView": true,
         "designer|userAlias": "main",
         "designer|userClassName": "main",
         "id": "main",
-        "layout": "vbox"
+        "layout": "vbox",
+        "scrollable": true
     },
     "name": "MyViewport",
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
     "designerId": "6dbd4ac5-fbbc-4c22-a779-288dd6886526",
     "viewControllerInstanceId": "5de11e9e-20bd-4906-b54e-1f281902361c",
     "viewModelInstanceId": "a82ce43a-1fce-49a0-b19b-7acc14c5fbf1",
@@ -27,7 +33,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": 1
+                "height": null,
+                "hideMode": null,
+                "layout|flex": 1.5,
+                "maxHeight": null
             },
             "name": "MyContainer2",
             "designerId": "6086ba90-9a8a-40c8-aff6-468970c8373a"
@@ -42,9 +51,11 @@
             "userConfig": {
                 "baseCls": null,
                 "container|align": "stretch",
+                "height": null,
                 "id": "pnl_main",
                 "layout": "hbox",
                 "layout|flex": 4,
+                "maxHeight": null,
                 "width": 915
             },
             "name": "MyContainer1",
@@ -71,14 +82,19 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "cls": [
-                            "login_panel"
-                        ],
+                        "baseCls": null,
+                        "collapsedCls": null,
+                        "componentCls": null,
                         "container|align": "stretch",
                         "dock": null,
+                        "headerOverCls": null,
                         "layout": "hbox",
-                        "layout|flex": 4,
+                        "layout|flex": 2.5,
                         "margin": null,
+                        "overlapHeader": false,
+                        "style": [
+                            "background-color: rgba(195, 242, 224, 0.789);"
+                        ],
                         "title": "LOGIN"
                     },
                     "name": "MyPanel1",
@@ -92,10 +108,10 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "baseCls": "pnl_main",
+                                "baseCls": "container6",
                                 "border": null,
                                 "cls": [
-                                    "pnl_main"
+                                    "contariner6"
                                 ],
                                 "layout|flex": 2,
                                 "margin": ""
@@ -112,9 +128,12 @@
                             "codeClass": null,
                             "userConfig": {
                                 "baseCls": null,
+                                "bodyBorder": false,
                                 "bodyPadding": 10,
+                                "bodyStyle": [
+                                    "background: rgba(195, 242, 224, 0.789)"
+                                ],
                                 "container|align": "stretch",
-                                "container|pack": "end",
                                 "dock": null,
                                 "header": false,
                                 "layout": "vbox",
@@ -133,46 +152,41 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "container|align": "middle",
-                                        "container|pack": "center",
+                                        "layout|flex": 1
+                                    },
+                                    "name": "MyContainer9",
+                                    "designerId": "8b57a843-5e87-469a-9317-a78604a66dea"
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
                                         "dock": null,
                                         "layout": "hbox",
-                                        "layout|flex": 2
+                                        "layout|flex": 5
                                     },
                                     "name": "MyContainer8",
                                     "designerId": "c5c98e60-2316-4343-bb6c-efe1ecbfd33e",
                                     "cn": [
                                         {
-                                            "type": "Ext.container.Container",
+                                            "type": "Ext.Img",
                                             "reference": {
                                                 "name": "items",
                                                 "type": "array"
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "layout|flex": 1
+                                                "dock": null,
+                                                "height": 201,
+                                                "layout|flex": 1,
+                                                "src": "resources/image/TITULO.gif"
                                             },
-                                            "name": "MyContainer9",
-                                            "designerId": "ea32ffcf-687d-4c2b-83b4-a50cac00cfda"
-                                        },
-                                        {
-                                            "type": "Ext.form.Label",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "cls": [
-                                                    "tittle"
-                                                ],
-                                                "layout|flex": 3,
-                                                "maxHeight": null,
-                                                "minHeight": null,
-                                                "text": "UV.radiation"
-                                            },
-                                            "name": "MyLabel",
-                                            "designerId": "6060ae6c-1190-4ad8-a0e7-6f0ddf7431ff"
+                                            "name": "MyImg",
+                                            "designerId": "95d31ef4-7467-4a33-a15f-ea36910f4c23"
                                         }
                                     ]
                                 },
@@ -185,8 +199,9 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "container|align": "stretch",
+                                        "container|pack": "center",
                                         "layout": "vbox",
-                                        "layout|flex": 2
+                                        "layout|flex": 4
                                     },
                                     "name": "MyContainer7",
                                     "designerId": "8bbd430c-0228-42ab-bd1b-7f64a36fb049",
@@ -294,7 +309,7 @@
                                         "dock": null,
                                         "height": 150,
                                         "layout": "hbox",
-                                        "layout|flex": 1
+                                        "layout|flex": 2
                                     },
                                     "name": "MyContainer",
                                     "designerId": "0882cb3e-dfc8-4015-8eac-e856dbe35df4",
@@ -307,7 +322,7 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "cls": null,
+                                                "cls": "button",
                                                 "iconAlign": null,
                                                 "id": "ingresar",
                                                 "text": "Entrar"
@@ -391,7 +406,7 @@
                                             "userConfig": {
                                                 "arrowCls": null,
                                                 "baseCls": null,
-                                                "cls": "butttonmain",
+                                                "cls": "button",
                                                 "componentCls": "",
                                                 "focusCls": "",
                                                 "iconCls": null,
@@ -467,7 +482,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": 1
+                "layout|flex": 1.5,
+                "maxHeight": 500
             },
             "name": "MyContainer3",
             "designerId": "6c2888d2-4224-429e-9b14-53d80cd79603"

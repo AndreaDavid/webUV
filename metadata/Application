@@ -18,7 +18,6 @@
         ],
         "views": [
             "main",
-            "vtn_register",
             "hola"
         ]
     },

@@ -6,10 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "container|align": "center",
+        "container|align": "stretch",
         "container|pack": "center",
         "designer|userAlias": "hola",
         "designer|userClassName": "hola",
+        "header": false,
         "height": 250,
         "layout": "vbox",
         "modal": true,
@@ -21,19 +22,45 @@
     "viewModelInstanceId": "aeedf1b6-c580-46e3-8125-c91d6fb44340",
     "cn": [
         {
-            "type": "Ext.form.Label",
+            "type": "Ext.container.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "dock": null,
-                "layout|flex": 1,
-                "text": "Hola Mundo"
+                "layout|flex": 1
             },
-            "name": "MyLabel1",
-            "designerId": "bbb323ee-f728-4e71-b9e3-ded5e580ef3f"
+            "name": "MyContainer16",
+            "designerId": "ba2bd9e3-2b01-4a48-b795-7a173c30a250"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 11
+            },
+            "name": "MyContainer17",
+            "designerId": "0a17d8ec-1f04-4bb4-a56e-0e4e48824235",
+            "cn": [
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Hola Mundo"
+                    },
+                    "name": "MyLabel1",
+                    "designerId": "bbb323ee-f728-4e71-b9e3-ded5e580ef3f"
+                }
+            ]
         }
     ]
 }

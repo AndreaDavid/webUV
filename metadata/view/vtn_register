@@ -6,302 +6,395 @@
     },
     "codeClass": null,
     "userConfig": {
+        "alignOnScroll": false,
         "autoShow": true,
+        "bodyStyle": [
+            "background: rgba(195, 242, 224, 0.789)"
+        ],
+        "border": true,
         "container|align": "center",
-        "container|pack": "center",
-        "designer|userAlias": "vtn_register",
+        "designer|userAlias": "ventana_registro",
         "designer|userClassName": "vtn_register",
-        "height": 348,
+        "flex": 1,
+        "height": null,
         "id": "vtn_register",
         "layout": "vbox",
         "modal": true,
-        "title": "Ventana de registro",
-        "width": 530
+        "resizable": null,
+        "width": null
     },
     "designerId": "22623416-fc0f-4c0b-8e8a-10e37319e38b",
     "viewControllerInstanceId": "ce7a8129-bba4-41dc-b1db-3d1aca151b5a",
     "viewModelInstanceId": "0934172c-ca32-44d8-828f-40df1c22981f",
     "cn": [
         {
-            "type": "Ext.form.Panel",
+            "type": "Ext.container.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "bodyPadding": 10,
-                "title": "Registro",
-                "width": 331
+                "layout|flex": 1
             },
-            "name": "MyForm1",
-            "designerId": "40ad1b0a-1687-4d31-ac9b-c367daff9d33",
+            "name": "MyContainer10",
+            "designerId": "3491dd03-b9c8-4231-ba18-1bc035f3bf21"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "hbox",
+                "layout|flex": 5
+            },
+            "name": "MyContainer13",
+            "designerId": "57019cbc-0214-4aa0-88da-40f3d4b31485",
             "cn": [
                 {
-                    "type": "Ext.form.field.Text",
+                    "type": "Ext.container.Container",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fieldLabel": "Nombre",
-                        "name": "nombre"
+                        "layout|flex": 1
                     },
-                    "name": "MyTextField2",
-                    "designerId": "3f809532-0fca-4acb-b077-410191122116"
+                    "name": "MyContainer15",
+                    "designerId": "c4e542fb-b60a-40ec-a57f-d1a8dbf153ae"
                 },
                 {
-                    "type": "Ext.form.field.Text",
+                    "type": "Ext.form.Panel",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fieldLabel": "Usuario",
-                        "name": "user"
+                        "bodyCls": [
+                            "vtn_register_boby"
+                        ],
+                        "bodyPadding": 10,
+                        "container|align": "center",
+                        "layout": "vbox",
+                        "layout|flex": 4.5,
+                        "title": "Registro",
+                        "width": 331
                     },
-                    "name": "MyTextField3",
-                    "designerId": "4a8d271e-6788-41d9-9786-f133ee35a6ed"
-                },
-                {
-                    "type": "Ext.form.field.Text",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "fieldLabel": "Correo",
-                        "name": "correo"
-                    },
-                    "name": "MyTextField4",
-                    "designerId": "9c87d74b-df27-4342-b894-97829f47a606"
-                },
-                {
-                    "type": "Ext.form.field.Text",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "fieldLabel": "Contraseña",
-                        "id": "password",
-                        "layout|anchor": "100%",
-                        "maxLength": 8,
-                        "minLength": 4,
-                        "minLengthText": "la contraseña debe tenr minimo  {0} caracteres",
-                        "name": "password",
-                        "width": 311
-                    },
-                    "name": "MyTextField5",
-                    "designerId": "5fcb47e5-161d-4b9a-b087-2aa8b19f66fc"
-                },
-                {
-                    "type": "Ext.form.field.Text",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "enableKeyEvents": true,
-                        "fieldLabel": "Confirmar contraseña",
-                        "layout|anchor": "100%",
-                        "width": 311
-                    },
-                    "name": "MyTextField6",
-                    "designerId": "f5bbcfe1-b58c-48b5-876a-bb6de7cf25fb",
+                    "name": "MyForm1",
+                    "designerId": "40ad1b0a-1687-4d31-ac9b-c367daff9d33",
                     "cn": [
                         {
-                            "type": "fixedfunction",
+                            "type": "Ext.form.field.Text",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|params": [
-                                    "value"
-                                ],
-                                "fn": "validator",
-                                "implHandler": [
-                                    "var password = Ext.getCmp(\"password\");",
-                                    "if(password!==undefined){",
-                                    "    if(password.getValue()===value){",
-                                    "        return true;",
-                                    "    }else{",
-                                    "        return \"contraseña no coincide\";",
-                                    "    }",
-                                    "}else{",
-                                    "   return \"password no diligenciado\"; ",
-                                    "}"
-                                ]
+                                "fieldLabel": "Nombre",
+                                "name": "nombre"
                             },
-                            "name": "validator",
-                            "designerId": "89894fe5-cdc0-4e2d-98a2-e5470679fb3f"
+                            "name": "MyTextField2",
+                            "designerId": "3f809532-0fca-4acb-b077-410191122116"
                         },
                         {
-                            "type": "basiceventbinding",
+                            "type": "Ext.form.field.Text",
                             "reference": {
-                                "name": "listeners",
+                                "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "fn": "onTextfieldKeyup",
-                                "implHandler": [
-                                    "if(e.keyCode===13) {",
-                                    "",
-                                    "var btn=Ext.getCmp(\"registrarme\");",
-                                    "btn.focus();",
-                                    "",
-                                    "}",
-                                    "console.log(\"feoJulian\");"
-                                ],
-                                "name": "keyup",
-                                "scope": "me"
+                                "fieldLabel": "Usuario",
+                                "name": "user"
                             },
-                            "name": "onTextfieldKeyup",
-                            "designerId": "e8e39939-9fa6-40b4-a2af-f34459c59415"
+                            "name": "MyTextField3",
+                            "designerId": "4a8d271e-6788-41d9-9786-f133ee35a6ed"
                         },
                         {
-                            "type": "basiceventbinding",
+                            "type": "Ext.form.field.Text",
                             "reference": {
-                                "name": "listeners",
+                                "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "fn": "onTextfieldKeypress",
-                                "implHandler": [
-                                    "console.log(\"feoJulian\");"
-                                ],
-                                "name": "keypress",
-                                "scope": "me"
+                                "fieldLabel": "Correo",
+                                "name": "correo"
                             },
-                            "name": "onTextfieldKeypress",
-                            "designerId": "b8d5bb02-ccd4-49cf-a0ae-197f02794efb"
+                            "name": "MyTextField4",
+                            "designerId": "9c87d74b-df27-4342-b894-97829f47a606"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Contraseña",
+                                "id": "password",
+                                "labelWidth": null,
+                                "maxLength": 8,
+                                "minLength": 4,
+                                "minLengthText": "la contraseña debe tenr minimo  {0} caracteres",
+                                "name": "password",
+                                "width": null
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "5fcb47e5-161d-4b9a-b087-2aa8b19f66fc"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "enableKeyEvents": true,
+                                "fieldLabel": "Confirmar contraseña",
+                                "labelWidth": null,
+                                "width": null
+                            },
+                            "name": "MyTextField6",
+                            "designerId": "f5bbcfe1-b58c-48b5-876a-bb6de7cf25fb",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "value"
+                                        ],
+                                        "fn": "validator",
+                                        "implHandler": [
+                                            "var password = Ext.getCmp(\"password\");",
+                                            "if(password!==undefined){",
+                                            "    if(password.getValue()===value){",
+                                            "        return true;",
+                                            "    }else{",
+                                            "        return \"contraseña no coincide\";",
+                                            "    }",
+                                            "}else{",
+                                            "   return \"password no diligenciado\"; ",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "validator",
+                                    "designerId": "89894fe5-cdc0-4e2d-98a2-e5470679fb3f"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTextfieldKeyup",
+                                        "implHandler": [
+                                            "if(e.keyCode===13) {",
+                                            "",
+                                            "var btn=Ext.getCmp(\"registrarme\");",
+                                            "btn.focus();",
+                                            "",
+                                            "}",
+                                            "console.log(\"feoJulian\");"
+                                        ],
+                                        "name": "keyup",
+                                        "scope": "me"
+                                    },
+                                    "name": "onTextfieldKeyup",
+                                    "designerId": "e8e39939-9fa6-40b4-a2af-f34459c59415"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTextfieldKeypress",
+                                        "implHandler": [
+                                            "console.log(\"feoJulian\");"
+                                        ],
+                                        "name": "keypress",
+                                        "scope": "me"
+                                    },
+                                    "name": "onTextfieldKeypress",
+                                    "designerId": "b8d5bb02-ccd4-49cf-a0ae-197f02794efb"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyContainer12",
+                            "designerId": "81f9f351-3017-468e-a9ff-96e6ebc73961",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "button",
+                                        "text": "Cancelar"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "1d5b8a11-4847-483c-9487-c0b42f0a575d",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick",
+                                                "implHandler": [
+                                                    "var cerrar=Ext.getCmp(\"vtn_register\");",
+                                                    "cerrar.close();",
+                                                    "",
+                                                    "",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick",
+                                            "designerId": "aba959f5-b087-4837-bec7-b7eed3bcb02d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "button",
+                                        "id": "registrarme",
+                                        "text": "Registrarme"
+                                    },
+                                    "name": "MyButton3",
+                                    "designerId": "f5a150f7-98dc-4965-b19d-516ab336f5cb",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick1",
+                                                "implHandler": [
+                                                    "var form=button.up(\"form\").getForm();",
+                                                    "if(form.isValid()){",
+                                                    "    form.submit(",
+                                                    "        {",
+                                                    "            url:\"accesscontroller/register\",",
+                                                    "            method:\"POST\",",
+                                                    "            waitMsg:\"registrando...\",",
+                                                    "            success:function(frm,out){",
+                                                    "                var cerrar=Ext.getCmp(\"vtn_register\");",
+                                                    "                cerrar.close();",
+                                                    "",
+                                                    "            },",
+                                                    "            failure:function(frm,out){",
+                                                    "                if(out.result!==undefined &&out.result.message===\"usuarioExistente\"){",
+                                                    "                    if(Ext.getCmp(\"toast\")===undefined){",
+                                                    "                        Ext.toast({",
+                                                    "                            timeout: 2000,",
+                                                    "                            id:\"toast\",",
+                                                    "                            html: '<center> ya esta registrado</center>',",
+                                                    "                            title: 'Alerta',",
+                                                    "                            width: 300,",
+                                                    "                            align: 't'",
+                                                    "                        });",
+                                                    "                    }",
+                                                    "                }else{",
+                                                    "                    if(Ext.getCmp(\"toast\")===undefined){",
+                                                    "                        Ext.toast({",
+                                                    "                            timeout: 2000,",
+                                                    "                            id:\"toast\",",
+                                                    "                            html: '<center>Error servidor</center>',",
+                                                    "                            title: 'Alerta',",
+                                                    "                            width: 300,",
+                                                    "                            align: 't'",
+                                                    "                        });",
+                                                    "                    }",
+                                                    "                }",
+                                                    "",
+                                                    "            }",
+                                                    "        }",
+                                                    "    );",
+                                                    "}else{",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick1",
+                                            "designerId": "9c6be2a7-1920-43e9-b98e-da3e9aa99de2"
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "type": "Ext.button.Button",
+                    "type": "Ext.container.Container",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "text": "Cancelar"
+                        "layout|flex": 1
                     },
-                    "name": "MyButton2",
-                    "designerId": "1d5b8a11-4847-483c-9487-c0b42f0a575d",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "onButtonClick",
-                                "implHandler": [
-                                    "var cerrar=Ext.getCmp(\"vtn_register\");",
-                                    "cerrar.close();",
-                                    "",
-                                    "",
-                                    ""
-                                ],
-                                "name": "click",
-                                "scope": "me"
-                            },
-                            "name": "onButtonClick",
-                            "designerId": "aba959f5-b087-4837-bec7-b7eed3bcb02d"
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.button.Button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "cls": "btn_container",
-                        "id": "registrarme",
-                        "text": "Registrarme"
-                    },
-                    "name": "MyButton3",
-                    "designerId": "f5a150f7-98dc-4965-b19d-516ab336f5cb",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "onButtonClick1",
-                                "implHandler": [
-                                    "var form=button.up(\"form\").getForm();",
-                                    "if(form.isValid()){",
-                                    "    form.submit(",
-                                    "        {",
-                                    "            url:\"accesscontroller/register\",",
-                                    "            method:\"POST\",",
-                                    "            waitMsg:\"registrando...\",",
-                                    "            success:function(frm,out){",
-                                    "                var cerrar=Ext.getCmp(\"vtn_register\");",
-                                    "                cerrar.close();",
-                                    "",
-                                    "            },",
-                                    "            failure:function(frm,out){",
-                                    "                if(out.result!==undefined &&out.result.message===\"usuarioExistente\"){",
-                                    "                    if(Ext.getCmp(\"toast\")===undefined){",
-                                    "                        Ext.toast({",
-                                    "                            timeout: 2000,",
-                                    "                            id:\"toast\",",
-                                    "                            html: '<center> ya esta registrado</center>',",
-                                    "                            title: 'Alerta',",
-                                    "                            width: 300,",
-                                    "                            align: 't'",
-                                    "                        });",
-                                    "                    }",
-                                    "                }else{",
-                                    "                    if(Ext.getCmp(\"toast\")===undefined){",
-                                    "                        Ext.toast({",
-                                    "                            timeout: 2000,",
-                                    "                            id:\"toast\",",
-                                    "                            html: '<center>Error servidor</center>',",
-                                    "                            title: 'Alerta',",
-                                    "                            width: 300,",
-                                    "                            align: 't'",
-                                    "                        });",
-                                    "                    }",
-                                    "                }",
-                                    "",
-                                    "            }",
-                                    "        }",
-                                    "    );",
-                                    "}else{",
-                                    "",
-                                    "}"
-                                ],
-                                "name": "click",
-                                "scope": "me"
-                            },
-                            "name": "onButtonClick1",
-                            "designerId": "9c6be2a7-1920-43e9-b98e-da3e9aa99de2"
-                        }
-                    ]
+                    "name": "MyContainer14",
+                    "designerId": "ddb6f7c1-16d6-4efb-b78c-064e0c436a52"
                 }
             ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1
+            },
+            "name": "MyContainer11",
+            "designerId": "bdda1325-932f-4fca-a96f-5b5054238356"
         }
     ]
 }

@@ -2,9 +2,9 @@
     "name": "webUV",
     "settings": {
         "cmd": {
-            "license": "commercial",
-            "cmdVersion": "6.2.1.29",
-            "frameworkVersion": "6.0.2.437"
+            "license": "",
+            "cmdVersion": "",
+            "frameworkVersion": ""
         },
         "urlPrefix": "http://localhost:1841/",
         "canvasControls": {
@@ -23,11 +23,7 @@
         "cacheBust": false,
         "buildShouldOverwriteIndex": true,
         "generateArchitectVersion": true,
-        "installStatus": "Not Installed",
-        "lastBuildSelection": {
-            "value": "webBuild",
-            "display": "Build web app"
-        }
+        "installStatus": "Not Installed"
     },
     "xdsVersion": "3.5.1",
     "xdsBuild": 348,

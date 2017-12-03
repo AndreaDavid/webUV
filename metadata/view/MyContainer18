@@ -6,23 +6,20 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoDestroy": false,
         "cls": [
             "img_fondo"
         ],
         "container|align": "stretch",
-        "designer|initialView": true,
-        "designer|userAlias": "mycontainer30",
-        "designer|userClassName": "MyContainer30",
+        "designer|userAlias": "mycontainer18",
+        "designer|userClassName": "MyContainer18",
         "dock": null,
         "flex": null,
         "id": "mainInf",
         "layout": "vbox",
-        "scrollable": true
+        "scrollable": null
     },
-    "name": "MyContainer30",
-    "configAlternates": {
-        "scrollable": "boolean"
-    },
+    "name": "MyContainer18",
     "designerId": "3e868c63-8dd5-4b61-8841-935dc8437256",
     "viewControllerInstanceId": "8bac5f01-b277-45eb-b4d3-2e554aef15bc",
     "viewModelInstanceId": "2f9ee8aa-c5c4-408b-8a42-6135f5473866",

@@ -1,5 +1,5 @@
 {
-    "type": "Ext.panel.Panel",
+    "type": "Ext.container.Viewport",
     "reference": {
         "name": "items",
         "type": "array"
@@ -8,14 +8,11 @@
     "userConfig": {
         "container|align": "stretch",
         "container|pack": "center",
+        "designer|initialView": true,
         "designer|userAlias": "hola",
         "designer|userClassName": "hola",
-        "header": false,
-        "height": 250,
         "layout": "vbox",
-        "modal": true,
-        "title": "hola",
-        "width": 400
+        "modal": true
     },
     "designerId": "ee79d7ba-4314-4acd-a7bc-b09ef5ef2ed7",
     "viewControllerInstanceId": "b1b31c99-077d-4726-ba92-6fecde456e12",

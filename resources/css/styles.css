@@ -79,6 +79,8 @@ color: #18294e;
   }
   .img_fondo{
     background: url('../image/sunFondo.png') no-repeat;
+    background-size: 100% 100% !important;
+    
     
     
   }
